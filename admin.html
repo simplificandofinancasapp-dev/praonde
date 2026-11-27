@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Administração | PraOnde</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0b4f38">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="paginas.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./">
+    <img src="icons/icon-192.png" alt="" width="34" height="34">
+    <span><b class="brand-name">PraOnde</b><small>ADMINISTRAÇÃO</small></span>
+  </a>
+  <a class="link" href="./">Voltar ao app</a>
+</header>
+<main>
+  <div class="actions" style="justify-content:space-between;margin:0 0 12px">
+    <p class="muted" id="who" style="margin:0"></p>
+    <div class="chips" id="modeChips" style="margin:0"></div>
+  </div>
+  <div id="banner"></div>
+  <div class="chips" id="nav" role="tablist" aria-label="Seções do painel"></div>
+  <div id="view"><p class="muted">Carregando…</p></div>
+  <noscript><p>O painel precisa de JavaScript.</p></noscript>
+</main>
+<div id="toast" role="status" aria-live="polite"></div>
+<!-- config.js: URL e chave PÚBLICA do Supabase (a mesma do app). A biblioteca só carrega quando há configuração. -->
+<script src="config.js"></script>
+<script>
+  if (window.APP_CONFIG && APP_CONFIG.supabaseUrl && APP_CONFIG.supabaseAnonKey)
+    document.write('<script src="vendor/supabase.js"><\/script>');
+</script>
+<script src="admin.js"></script>
+</body>
+</html>

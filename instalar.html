@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Instalar o PraOnde</title>
+<meta name="description" content="Instale o PraOnde no seu celular em poucos toques. Grátis por 1 mês, sem cartão.">
+<meta name="theme-color" content="#0b4f38">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="paginas.css">
+<style>
+  .instalar { max-width: 560px; }
+  .instalar .lead { font-size: 1.05rem; margin: 0 0 18px; }
+  .instalar .grande { width: 100%; min-height: 52px; font-size: 1.05rem; text-decoration: none; }
+  .instalar ol { padding-left: 1.3em; margin: .6em 0 1em; }
+  .instalar ol li { margin: .55em 0; }
+  .instalar .passo { background: var(--soft); border-radius: 10px; padding: 3px 9px; font-weight: 700; white-space: nowrap; }
+  .instalar .aviso { background: var(--warn-bg); color: var(--warn-fg); border-radius: 10px; padding: 10px 12px; margin: 10px 0; font-size: .93rem; }
+  .instalar details { margin: 10px 0; }
+  .instalar summary { cursor: pointer; font-weight: 600; padding: 8px 0; }
+  .instalar .sem-js .so-js { display: none; }
+  .instalar [hidden] { display: none !important; }
+  .instalar .entrar { margin-top: 18px; color: var(--muted); font-size: .93rem; }
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><img src="icons/icon-192.png" alt="" width="34" height="34"><span><b class="brand-name">PraOnde</b><small>INSTALAR</small></span></a>
+</header>
+<main class="instalar">
+  <h1>Instale o PraOnde no seu celular</h1>
+  <p class="lead">É rápido, <b>grátis por 1 mês</b> e sem cartão de crédito.</p>
+
+  <!-- Android -->
+  <section class="card" id="android" aria-labelledby="t-android">
+    <h2 id="t-android">Tenho Android</h2>
+    <p>Toque no botão. Ele abre o Google Play para você instalar.</p>
+    <a class="btn primary grande" id="btn-play" href="https://play.google.com/apps/testing/br.com.marileilopes.simplificandofinancas">Instalar pelo Google Play</a>
+    <ol>
+      <li>Se aparecer <b>“Tornar-se testador”</b>, toque nele.</li>
+      <li>Depois toque em <b>“Fazer download no Google Play”</b> e em <b>Instalar</b>.</li>
+    </ol>
+    <p class="aviso">Use a conta Google do e-mail que a Marilei cadastrou para você.</p>
+    <p><a href="./">Prefere não instalar? Use pelo navegador.</a></p>
+  </section>
+
+  <!-- iPhone -->
+  <section class="card" id="iphone" aria-labelledby="t-iphone">
+    <h2 id="t-iphone">Tenho iPhone</h2>
+    <p>Ainda não está na App Store, mas você instala pelo <b>Safari</b> e ele fica na tela inicial, como um aplicativo.</p>
+    <p class="aviso so-js" id="aviso-safari" hidden>Você não está no Safari. Toque em <b>Copiar endereço</b>, abra o <b>Safari</b> e cole na barra de cima.</p>
+    <ol>
+      <li>Abra este endereço no <b>Safari</b>.</li>
+      <li>Toque no ícone de <b>compartilhar</b> (o quadradinho com a seta para cima, embaixo).</li>
+      <li>Role e toque em <b>“Adicionar à Tela de Início”</b>.</li>
+      <li>Toque em <b>“Adicionar”</b>. Pronto: o ícone do PraOnde aparece na tela.</li>
+    </ol>
+    <a class="btn primary grande" href="./">Abrir o PraOnde agora</a>
+  </section>
+
+  <!-- Computador ou outro aparelho -->
+  <section class="card" id="outro" aria-labelledby="t-outro">
+    <h2 id="t-outro">Estou no computador</h2>
+    <p>Você pode usar o PraOnde direto no navegador, ou abrir este endereço no celular para instalar.</p>
+    <a class="btn primary grande" href="./">Abrir o PraOnde no navegador</a>
+  </section>
+
+  <p class="so-js"><button type="button" class="btn grande" id="btn-copiar">Copiar o endereço desta página</button></p>
+  <p class="so-js muted" id="copiado" role="status" aria-live="polite"></p>
+
+  <p class="entrar"><b>Como entrar:</b> com a sua conta <b>Google</b> ou com o seu <b>e-mail</b>.</p>
+</main>
+<script src="instalar.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "PraOnde",
+  "short_name": "PraOnde",
+  "description": "PraOnde seu dinheiro foi? Descubra em segundos. Registre gastos por foto, voz ou texto, sem complicação e sem planilha.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b4f38",
+  "theme_color": "#0b4f38",
+  "categories": ["finance", "productivity", "education"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "app-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
